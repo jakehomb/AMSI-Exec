@@ -5,7 +5,7 @@
 
 This repository hosts the Invoke-AMSIExec script which is geared to create a signature bypass in order to disable the Anti-Malware Scan Interface. With AMSI disabled, an attacker can run code which would normally be flagged as malicious within that powershell session.
 
-## Background information:
+## Background information
 
 ### Credit where credit is due:
 
@@ -20,6 +20,8 @@ When working with the bypass methods given in the article stated, I saw that the
 ```
 #[Ref].Assembly.GetType('System.Management.Automation.AmsiUtils').GetField('amsiInitFailed','NonPublic,Static').SetValue($null,$true)
 ```
+
+## Project Description
 
 ### Finding the Signature:
 
